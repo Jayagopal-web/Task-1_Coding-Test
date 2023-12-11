@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevaj Coding Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 style="text-align: center;">Table</h1>
+<table id="myTable">
+    <thead>
+        <tr>
+            <th onclick="sortTable(0)">ID</th>
+            <th onclick="sortTable(1)">Name</th>
+            <th onclick="sortTable(2)">Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Janet</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jayagopal</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Jisha</td>
+            <td>23</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="pagination" id="pagination"></div>
+
+<h1 style="text-align: center;">Slideshow</h1>
+
+<div class="slideshow-container">
+
+    <div class="mySlides">
+      <img src="images/img1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <img src="images/img2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <img src="images/img3.jpg" style="width:100%">
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
